@@ -1,0 +1,84 @@
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fragments.TaskManagement.AllTaskListFragment">
+
+    <LinearLayout
+        android:id="@+id/mainview"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:fitsSystemWindows="true"
+        android:clipToPadding="false">
+
+
+
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:fab="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="?android:windowContentOverlay"
+            >
+
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                />
+            <ProgressBar
+                android:id="@+id/alltasklist_progress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/fab_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="bottom|right">
+
+
+                <com.melnykov.fab.FloatingActionButton
+                    xmlns:fab="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/fab_remove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="90dp"
+                    android:layout_marginRight="16dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_remove_white_36dp"
+                    fab:fab_colorNormal="@color/colorAccent"
+                    fab:fab_colorPressed="@color/colorAccentDark"
+                    fab:fab_colorRipple="@color/colorAccentDark"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    />
+
+                <com.melnykov.fab.FloatingActionButton
+                    xmlns:fab="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/fab_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_add_white_36dp"
+                    fab:fab_colorNormal="@color/colorPrimary"
+                    fab:fab_colorPressed="@color/colorPrimaryDark"
+                    fab:fab_colorRipple="@color/colorPrimaryDark"
+                    />
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

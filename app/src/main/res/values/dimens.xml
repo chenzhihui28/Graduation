@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="headerbar_elevation">4dp</dimen>
+    <dimen name="navdrawer_width">260dp</dimen>
+    <dimen name="text_size_small">13sp</dimen>
+    <dimen name="buttonSize">23dp</dimen>
+    <dimen name="radioButtonSize">25dp</dimen>
+    <dimen name="buttonRadius">3dp</dimen>
+    <dimen name="buttonBorder">2.5dp</dimen>
+    <dimen name="buttonPadding">16dp</dimen>
+    <dimen name="unit_spacing">8dp</dimen>
+</resources>

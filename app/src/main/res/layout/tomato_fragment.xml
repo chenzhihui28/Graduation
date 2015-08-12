@@ -1,0 +1,84 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/tomatolist_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <FrameLayout
+        android:id="@+id/clock_lay"
+        android:layout_marginTop="-70dp"
+        android:layout_marginBottom="-70dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <com.MyViews.CircularSeekBar
+            android:id="@+id/circularSeekBar1"
+            app:start_angle="270"
+            app:end_angle="270"
+            app:circle_x_radius="100"
+            app:circle_y_radius="100"
+            app:use_custom_radii="true"
+            app:circle_progress_color="#F33446"
+            app:circle_color="#DEDEDE"
+            app:max="100"
+            app:pointer_alpha_ontouch="100"
+            app:pointer_color="#C52A39"
+            app:pointer_halo_color="#88F33446"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/buttonRed"
+            android:textSize="45sp"
+            android:text="开始"
+            />
+    </FrameLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_below="@id/clock_lay"
+        android:orientation="vertical"
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/tomato_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <TextView
+        android:id="@+id/nodata_tv"
+        android:text="还没有番茄哦~,赶紧点击“开始”创建一个吧"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_below="@id/clock_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+
+

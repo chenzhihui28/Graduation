@@ -1,0 +1,97 @@
+<resources>
+    <!-- Colors -->
+    <color name="colorMain">#0277bd</color>
+    <color name="colorMainDark">#01579b</color>
+    <color name="colorMainAccent">#e8eaf6</color>
+    <color name="colorMainText">#ffffff</color>
+    <color name="colorMainBg">#FAFAFA</color>
+
+    <color name="colorText">#000000</color>
+    <color name="colorTextLight">#FFFFFF</color>
+
+    <color name="navdrawer_background">#FFFFFF</color>
+    <color name="tab_background">@color/colorMain</color>
+    <color name="tab_indicator_color">#FFF</color>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorMain</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/colorMainDark</item>
+
+        <!-- colorAccent is used as the default value for colorControlActivated
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/colorMainAccent</item>
+
+        <item name="android:windowBackground">@color/colorMainBg</item>
+
+        <item name="drawerArrowStyle">@style/ToolbarColorStyle</item>
+    </style>
+
+    <style name="ToolbarColorStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">#fff</item>
+    </style>
+
+    <style name="HeaderBar">
+        <item name="android:background">?colorPrimary</item>
+    </style>
+
+    <style name="ActionBarThemeOverlay" parent="">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="colorControlHighlight">#3fff</item>
+    </style>
+
+    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Misc -->
+    <style name="TabIndicator" />
+
+    <declare-styleable name="ScrimInsetsView">
+        <attr name="insetForeground" format="reference|color" />
+    </declare-styleable>
+
+    <integer name="font_textStyle_medium">1</integer>
+
+
+
+    <!-- Backward-compatible version of ?android:attr/buttonBarStyle -->
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <!-- Backward-compatible version of ?android:attr/buttonBarButtonStyle -->
+    <style name="ButtonBarButton" /> <!-- bold -->
+
+    <declare-styleable name="CircularSeekBar">
+        <attr name="progress" format="integer"></attr>
+        <attr name="max" format="integer"></attr>
+        <attr name="move_outside_circle" format="boolean"></attr>
+        <attr name="maintain_equal_circle" format="boolean"></attr>
+        <attr name="use_custom_radii" format="boolean"></attr>
+        <attr name="lock_enabled" format="boolean"></attr>
+        <attr name="circle_x_radius" format="float" />
+        <attr name="circle_y_radius" format="float" />
+        <attr name="circle_stroke_width" format="float" />
+        <attr name="pointer_radius" format="float" />
+        <attr name="pointer_halo_width" format="float" />
+        <attr name="pointer_halo_border_width" format="float"></attr>
+        <attr name="circle_color" format="string"></attr>
+        <attr name="circle_progress_color" format="string"></attr>
+        <attr name="pointer_color" format="string"></attr>
+        <attr name="pointer_halo_color" format="string"></attr>
+        <attr name="pointer_halo_color_ontouch" format="string"></attr>
+        <attr name="pointer_alpha_ontouch" format="integer"></attr>
+        <attr name="start_angle" format="float"></attr>
+        <attr name="end_angle" format="float"></attr>
+        <attr name="circle_fill" format="string"></attr>
+    </declare-styleable>
+    <style name="Widget"/>
+    <style name="Widget.CountDownView"></style>
+    <style name="Widget.CountDownView.Light"></style>
+</resources>

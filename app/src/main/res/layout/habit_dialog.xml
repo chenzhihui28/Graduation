@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addhabit_layout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/habit_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="textCapSentences"
+        android:maxLines="1"
+        android:hint="习惯养成计划名称"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="计划目标天数"
+        />
+
+    <Spinner
+        android:id="@+id/habit_cost_spinner"
+        android:background="#EBEBEB"
+        android:layout_height="30dp"
+        android:layout_width="fill_parent"/>
+
+</LinearLayout>

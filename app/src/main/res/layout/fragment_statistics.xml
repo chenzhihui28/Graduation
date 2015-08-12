@@ -1,0 +1,24 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ProgressBar
+        android:id="@+id/statistics_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:orientation="vertical"
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/statistics_listview"
+            android:divider="@android:color/transparent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/addtaskdialog"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/task_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="textCapSentences"
+        android:maxLines="1"
+        android:hint="任务名称"/>
+
+    <EditText
+        android:id="@+id/task_description_et"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:inputType="textCapSentences"
+        android:maxLines="2"
+        android:hint="任务内容"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="所属项目"/>
+    <Spinner
+        android:id="@+id/dialog_spinner"
+        android:layout_width="fill_parent"
+        android:background="#EBEBEB"
+        android:layout_height="30dp"/>
+
+
+    <DatePicker android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="紧急程度/优先级(红色最高，蓝色次之，绿色最低)" />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/task_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/task_priority_red"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+
+            android:drawableLeft="@drawable/radio_selector_red"
+            android:drawablePadding="6dp"
+            android:button="@null"
+            android:background="@android:color/transparent"
+
+            android:paddingRight="18dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+        />
+
+        <RadioButton
+            android:id="@+id/task_priority_blue"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+
+            android:checked="true"
+            android:drawableLeft="@drawable/radio_selector_blue"
+            android:drawablePadding="6dp"
+            android:button="@null"
+            android:background="@android:color/transparent"
+
+            android:paddingRight="18dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+        />
+
+        <RadioButton
+            android:id="@+id/task_priority_green"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+
+            android:drawableLeft="@drawable/radio_selector_green"
+            android:drawablePadding="6dp"
+            android:button="@null"
+            android:background="@android:color/transparent"
+
+            android:paddingRight="18dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+        />
+    </RadioGroup>
+</LinearLayout>
